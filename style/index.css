@@ -1,1 +1,225 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+    
+    max-width: 100%;
+}
+body {
+    color: whitesmoke;
+	line-height: 1.5;
+    background-color: darkslategrey;
+    
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Reset above this.*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    
+}
+html {
+    font-size:62.5%;
+}
+
+header {
+    background-color: rgb(5, 102, 73);
+    margin-bottom: 1%;
+    width: 100%;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: 'Jost', sans-serif;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+header nav {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+nav a {
+    color: whitesmoke;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    font-size:2rem;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: 5%;
+    box-shadow: inset 0 0 0 0 darkgrey;
+}
+
+nav a:hover {
+    box-shadow: inset 300px 0 0 0 rgb(49, 238, 197);
+    transition: ease-in .3s;
+}
+
+.topsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.description {
+    padding: 20px;
+    width: 50%;
+}
+
+
+.aboutMe {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.button {
+    background-color: teal;
+    padding: 8px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+.button:hover {
+    box-shadow: inset 300px 0 0 0 rgb(49, 238, 197);
+    transition: ease-in .3s;
+}
+
+.description h2 {
+    margin-top:10%;
+    font-size: 50px;
+    font-family: 'Jost', sans-serif;    
+}
+
+.description p {
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.row {
+    display: flex;
+    padding: 2%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row div {
+    height: 500px;
+    width: 500px;
+    margin: 1%;
+    padding: 1%;
+}
+
+.row div:hover 
+{
+    transition:ease-out .3s;
+    opacity: 60%;
+}
+
+.portfolio
+{
+    text-align: center;
+}
+
+.portfolio p
+{
+    font-size: 1.5rem;
+}
+
+footer 
+{
+    background-color: rgb(5, 102, 73);
+    text-align: center;
+    padding: 20px;
+}
+
+.footerInfo {
+    height: 10%;
+    max-width: 100%;
+}
+
+footer h3 {
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+
+}
+@media(max-width: 800px)
+    {
+
+    header nav
+    {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .topsection 
+    {
+        flex-flow: column wrap;
+    }
+    }
+    @media(max-width: 400px)
+    {
+        header nav
+        {
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .topsection 
+        {
+            flex-flow: column wrap;
+        }
+        
+    }
